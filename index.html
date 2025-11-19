@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Музей НТУ "ХПІ"</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <img class="logo" src="img/logo-ua-r.png" alt="NTU 'KHPI' logo" />
+      <a class="header-text" href="start.html">
+        <h1>Музей НТУ "ХПІ"</h1>
+      </a>
+      
+      <img class="logo" src="img/logo.png" alt="IKM logo" />
+    </header>
+    <main>
+      <!--Це заглушка у вигляді відео-->
+      <video autoplay muted loop playsinline class="background-video">
+        <source src="img/video.mp4" type="video/mp4" />
+      </video>
+      <div class="overlay"></div>
+
+      <div class="controller-menu">
+        <button id="controller-btn">Змінити контролер</button>
+        <div class="dropdown" id="controller-dropdown">
+          <div class="dropdown-item" data-type="cursor">
+            Курсор <img class="icon" src="img/Play-2.png" alt="cursor" />
+          </div>
+          <div class="dropdown-item" data-type="joystick">
+            Джойстик <img class="icon" src="img/Stop.png" alt="joystick" />
+          </div>
+
+        </div>
+      </div>
+      
+    </main>
+  </body>
+</html>
